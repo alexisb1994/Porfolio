@@ -39,7 +39,7 @@ color:var(--secondary-color)
 
 }
 section{
-    padding: 10px;
+    padding: 20px;
     min-height: 100vh;
 
 }
@@ -130,7 +130,7 @@ height: 20%; */
     /* display: flex;
     flex-direction: column;
     align-items: center; */
-   
+
 }
  #contact h2{
     text-align: center;
@@ -147,7 +147,7 @@ height: 20%; */
    
     padding: 20px;
     margin: auto;
-    width: 25%;
+    width:70%;
     outline: none;
  }
 
@@ -168,4 +168,44 @@ border-radius: 5px;
  }
  #contact button{
     width:50%;
+ }
+
+ footer{
+    background-color: black;
+    color: white;
+    padding: 30px;
+    text-align: center;
+ }
+
+ @media (max-width:880px) {
+    .container-grid-projects, .container-grid-education {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+        padding: 10px;
+        
+        }
+
+ }
+ @media (max-width:480px){
+    #banner h1{
+        font-size: 40px;
+        text-align: center;
+    }
+    #banner p{
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+}
+.container-grid-projects, .container-grid-education {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px;
+    padding: 10px;
+    
+    }
+header nav ul li a{
+    font-size: 17px;
+}
+
  }
