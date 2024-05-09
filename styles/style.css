@@ -65,9 +65,10 @@ section{
 text-align: center;
 font-size: 40px;
 
+
 }
 
-.container-grid-projets{
+.container-grid-projects, .container-grid-education {
 display: grid;
 grid-template-columns: repeat(3,1fr);
 gap: 20px;
@@ -79,13 +80,14 @@ border: 1px solid rgb(179, 178, 178);
 text-align: center;
 padding: 20px;
 box-shadow: -2px 0px 12px -2px rgba(0,0,0,0.46);
-transition: 0.3s transform;
+transition: 0.2s transform;
 }
-#projects .card:hover{
+#projects .card:hover,#education .card:hover{
     transform: scale(1.03);
+    
 }
 
-#projects .card a{
+#projects .card a, #education .card a, #contact button{
 background-color: rgb(0, 180, 0);
     color: white;
     text-decoration: none;
@@ -98,8 +100,72 @@ background-color: rgb(0, 180, 0);
     border: 1px solid rgb(0, 160, 21);
     
 }
-#projects .card a:hover{
-color: black;
-/* font-weight: bold; */
 
+#education .card a:hover,#projects .card a:hover{
+        color: black;
+        /* font-weight: bold; */
+       
+        }
+#education{
+    background-color: rgb(0, 0, 0);
 }
+
+#education .card{
+    background-color: white;
+/* width: 20%;
+height: 20%; */
+}        
+
+#education img{
+    width: 75%;
+}
+#education h2{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+      
+    }
+
+#contact {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+   
+}
+ #contact h2{
+    text-align: center;
+    font-size: 40px;
+ }   
+ #contact form{
+    /* display: flex;
+       flex-direction: column;
+   justify-content: center;
+   align-items: center;
+       background-color: antiquewhite;
+    width: 50%;
+    padding: 20px; */
+   
+    padding: 20px;
+    margin: auto;
+    width: 25%;
+    outline: none;
+ }
+
+ #contact label,
+ #contact input,
+ #contact textarea,
+ #contact button{
+    display: block;
+    width: 100%;
+    padding: 10px 0px;
+font-size: 17px;
+border-radius: 5px;
+
+ }
+ #contact input,
+ #contact textarea {
+    border: 1px solid gainsboro;
+ }
+ #contact button{
+    width:50%;
+ }
